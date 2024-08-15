@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Player</title>
+        <link rel="stylesheet" href="style2.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="music-player">
+            
+            <!-- Top -->
+            <nav>
+                <!--Left (back)-->
+                <div class="circle" onclick="openSongPage('index.html')">
+                    <img src="icon/angle_left_green.png">
+                </div>
+
+                <!--Right (Bar)-->
+                <div class="circle" id="menu-icon">
+                    <img src="icon/bars_green.png">
+                </div>
+                
+                <ul class="dropdown-menu" id="dropdown-menu">
+                    <li onclick="handleOptionClick('AFTERLIFE')">AFTERLIFE</li>
+                    <hr>
+                    <li onclick="handleOptionClick('Mao6ini')">Mao6ini</li>
+                    <hr>
+                    <li onclick="handleOptionClick('Summer')">Summer</li>
+                </ul>
+            </nav>
+
+            <!-- Center -->
+            <div id="circle-wave" class="circle-wave">
+                <div></div>
+                <div></div>
+                <img src="image/palestine_photo.jpg" class="song-img" alt="music image">
+            </div>
+            
+            <h1>Mao6ini</h1> <!--Song Name-->
+            <p>murad al-Switi</p> <!--Singer Name-->
+            <audio id="song">
+                <source src="music/mao6ini.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <p id="time-display" class="time-display"></p>
+
+            <!-- Bottom -->
+            <div class="controls-container">
+                
+                <div class="controls">
+                    <div onclick="openSongPage('index1.html')">
+                        <img src="icon/backward_green.png">
+                    </div>
+    
+                    <div onclick="playPause()">
+                        <img src="icon/play_white.png" id="control_icon">
+                    </div>
+    
+                    <div onclick="openSongPage('index3.html')">
+                        <img src="icon/forward_green.png">
+                    </div>
+                </div>
+
+                <div class="extra_controls">
+                    <div onclick="repeatSong('index2')">
+                        <img src="icon/repeat.png">
+                    </div>
+    
+                    <div onclick="linearPath()">
+                        <img src="icon/linear_path.png">
+                    </div>
+                </div>
+    
+                
+            </div>
+            
+        </div>
+    </body>
+    
+</html>

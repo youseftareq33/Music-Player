@@ -1,0 +1,3 @@
+green: #0b9e2e
+blue: #1E9ACB
+red: #FF2F2F
