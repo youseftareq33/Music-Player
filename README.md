@@ -1,6 +1,6 @@
 # Music Player Website
 
-## live Demo:
+## Live Demo:
 https://youseftareq33.github.io/Music-Player/website_files
 
 
